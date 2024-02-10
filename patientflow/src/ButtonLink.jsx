@@ -6,7 +6,7 @@ function ButtonLink({linkref, desc, type}) {
     <div>
       {/* <Link to="https://react.semantic-ui.com/"> */}
       <Link to={linkref}>
-        <button className="btn btn-success mx-2">{desc}</button>
+        <button className="btn mx-2">{desc}</button>
       </Link>
     </div>
   )

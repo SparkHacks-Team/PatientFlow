@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Taskbar from './components/Taskbar.jsx'
+import ButtonLink from "./ButtonLink.jsx";
 
 function EditInfo(){
     console.log("hi")
@@ -10,19 +12,24 @@ function EditInfo(){
         if(!name){
             alert("Please enter full name");
         }
-        console.log("hit")
         completeForm(true);
     }
     
-    console.log("after")
     return(
         <div>
-            <form onSubmit={handle}> 
-                <label> Name: </label>
-                <input type="text" className="text-black" onChange={(event) => setName(event.target.value)} placeholder="Full Name"/>
-            </form>
-            <div>
-            <button type="submit">Done</button>
+            <Taskbar/>
+            <div className="bg-gray-500 p-40 mx-8 justify-center rounded flex items-center h-screen">
+                <form onSubmit={handle} className="justify-center"> 
+                    <label> Name: </label>
+                    <input type="text" className="text-white" onChange={(event) => setName(event.target.value)} placeholder="Full Name"/>
+                    <label> Medication Type: </label>
+                    <input type="text" className="text-white" onChange={(event) => setName(event.target.value)} placeholder="Medication Name"/>
+                    <label> Doctor: </label>
+                    <input type="text" className="text-white" onChange={(event) => setName(event.target.value)} placeholder="Doctor Name"/>
+                </form>
+                <div>
+                <ButtonLink linkref={"/test"} desc={"Done"} type={"success"}/>
+                </div>
             </div>
         </div>
     )
