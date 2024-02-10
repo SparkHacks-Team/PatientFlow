@@ -135,5 +135,34 @@ namespace PatientView.Controllers
             }
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public ActionResult Delete(int id)
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult Delete(IFormCollection formCollection)
+        {
+            Patient pat = new Patient();
+            pat.Patient_ID = Convert.ToInt32(formCollection["Patient_ID"]);
+            return DeleteEmployeeByService(pat.Patient_ID);
+        }
+        private ActionResult DeleteEmployeeByService(int id)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:7277");
+                var deleteTask = client.DeleteAsync("/Patient?id=" + id.ToString());
+                deleteTask.Wait();
+                var result = deleteTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index");
+                }
+            }
+            return RedirectToAction("Index");
+        }
     }
 }
