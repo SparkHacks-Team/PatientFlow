@@ -2,9 +2,20 @@
 import viteLogo from './assets/logo.png'
 // import './App.css'
 import './Main.css'
+import React from 'react';
+import { useNavigate } from "react-router-dom";
 import Taskbar from './components/Taskbar'
+import { func } from 'prop-types';
+import ButtonLink from './ButtonLink';
 
 function App() {
+
+  // let nav = useNavigate();
+
+  // function changePage() {
+  //   let page = "/itracker.html";
+  //   nav(page);
+  // }
 
   return (
     <>
@@ -18,9 +29,11 @@ function App() {
           <h1 className="p-5 font-mono text-stone-800 font-semibold flex justify-center opacity-0 animate-fade">Patient Flow</h1>
           <p className="p-5 font-mono text-stone-800 font-medium opacity-0 animate-fade"> Welcome to Patient Flow. Register to manage below.</p>
           <div className="flex justify-center opacity-0 animate-fade">
-            <button onClick={() => { /* Your click handler function */ }}>
+          {/* <Link to="/itracker.html"> */}
+            {/* <button>
               Start Here
-            </button>
+            </button> */}
+            <ButtonLink/>
           </div>
           </div>
         </div>
