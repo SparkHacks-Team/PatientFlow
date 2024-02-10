@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import Itracker from './Itracker.jsx'
 import PatientInfo from './PatientInfo.jsx'
+import EditInfo from './EditInfo.jsx'
 import './index.css'
 
 import {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/test",
     element: <PatientInfo patientName={"JohnDoe"}/>,
+  },
+  {
+    path: "/form",
+    element: <EditInfo/>,
   },
 ]); 
 
