@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Samples\\PatientAPI\\PatientAPI\\PatientAPI.csproj": {}
+    "D:\\Samples\\try\\PatientFlow\\PatientAPI\\PatientAPI.csproj": {}
   },
   "projects": {
-    "D:\\Samples\\PatientAPI\\PatientAPI\\PatientAPI.csproj": {
+    "D:\\Samples\\try\\PatientFlow\\PatientAPI\\PatientAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Samples\\PatientAPI\\PatientAPI\\PatientAPI.csproj",
+        "projectUniqueName": "D:\\Samples\\try\\PatientFlow\\PatientAPI\\PatientAPI.csproj",
         "projectName": "PatientAPI",
-        "projectPath": "D:\\Samples\\PatientAPI\\PatientAPI\\PatientAPI.csproj",
+        "projectPath": "D:\\Samples\\try\\PatientFlow\\PatientAPI\\PatientAPI.csproj",
         "packagesPath": "C:\\Users\\chlax\\.nuget\\packages\\",
-        "outputPath": "D:\\Samples\\PatientAPI\\PatientAPI\\obj\\",
+        "outputPath": "D:\\Samples\\try\\PatientFlow\\PatientAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chlax\\AppData\\Roaming\\NuGet\\NuGet.Config",
