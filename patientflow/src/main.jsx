@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import Itracker from './Itracker.jsx'
+import PatientInfo from './PatientInfo.jsx'
 import './index.css'
 
 import {
@@ -16,9 +17,9 @@ const router = createBrowserRouter([
   },
   {
     path: "/test",
-    element: <Itracker/>,
+    element: <PatientInfo patientName={"JohnDoe"}/>,
   },
-]);
+]); 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
