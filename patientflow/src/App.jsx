@@ -2,20 +2,10 @@
 import viteLogo from './assets/logo.png'
 // import './App.css'
 import './Main.css'
-import React from 'react';
-import { useNavigate } from "react-router-dom";
 import Taskbar from './components/Taskbar'
-import { func } from 'prop-types';
 import ButtonLink from './ButtonLink';
 
 function App() {
-
-  // let nav = useNavigate();
-
-  // function changePage() {
-  //   let page = "/itracker.html";
-  //   nav(page);
-  // }
 
   return (
     <>

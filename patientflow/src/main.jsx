@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-// import Itracker from './itracker.jsx'
+import Itracker from './Itracker.jsx'
 import './index.css'
 
 import {
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/test",
-    element: <div>hi</div>,
+    element: <Itracker/>,
   },
 ]);
 
